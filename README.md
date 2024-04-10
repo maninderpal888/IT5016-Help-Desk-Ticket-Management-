@@ -17,7 +17,7 @@ Project is created with:
 To run this project, install :
 
 ```
-$ cd ../lorem
+
 $ git clone https://github.com/maninderpal888/IT5016-Help-Desk-Ticket-Management-.git
 $ cd IT5016-Help-Desk-Ticket-Management
 $ python ticketing_system.py
