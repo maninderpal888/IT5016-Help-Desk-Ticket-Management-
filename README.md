@@ -20,5 +20,5 @@ To run this project, install :
 
 $ git clone https://github.com/maninderpal888/IT5016-Help-Desk-Ticket-Management-.git
 $ cd IT5016-Help-Desk-Ticket-Management
-$ python ticketing_system.py
+$ python software_project.py
 ```
