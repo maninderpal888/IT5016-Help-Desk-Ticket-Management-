@@ -12,3 +12,12 @@ Reopen closed tickets if further action is required.
 ## Technologies
 Project is created with:
 * Python version: 3.12
+
+## Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../lorem
+$ npm install
+$ npm start
+```
