@@ -18,7 +18,7 @@ Ticket = namedtuple(
 class TicketingSystem:
     def __init__(self):
         self.tickets = []
-        self.next_ticket_number = 2000
+        self.next_ticket_number = 2001
 
     def submit_ticket(self, ticket_creator_name, staff_id, contact_email, description):
         new_ticket_number = self.next_ticket_number
@@ -86,9 +86,9 @@ def main():
     while True:
 
         print("\nMenu:")
-        print("1. Submit Ticket")
-        print("2. Display Tickets")
-        print("3. Ticket Statistics")
+        print("1. Create Ticket")
+        print("2. Display all Tickets")
+        print("3. Ticket all Statistics")
         print("4. Resolve Ticket")
         print("5. Reopen Ticket")
         print("6. Exit")
@@ -97,10 +97,10 @@ def main():
 
         if choice == "1":
             print("\n************Create a new Ticket*************")
-            ticket_creator_name = input("\nEnter ticket creator's name: ")
-            staff_id = input("Enter staff ID: ")
-            contact_email = input("Enter contact email: ")
-            description = input("Enter issue description: ")
+            ticket_creator_name = input("\nTicket creator's name: ")
+            staff_id = input("Staff ID: ")
+            contact_email = input("Contact email: ")
+            description = input("Issue description: ")
             ticketing_system.submit_ticket(
                 ticket_creator_name, staff_id, contact_email, description
             )
@@ -112,16 +112,18 @@ def main():
             ticketing_system.ticket_statistics()
 
         elif choice == "4":
+            print ("\n***************** Resolve Ticket*********************")
             ticket_number = int(input("\nEnter ticket number to resolve: "))
             response = input("Enter response: ")
             ticketing_system.resolve_ticket(ticket_number, response)
 
         elif choice == "5":
+            print ("\n***************** Reopen  Ticket*********************")
             ticket_number = int(input("Enter ticket number to reopen: "))
             ticketing_system.reopen_ticket(ticket_number)
 
         elif choice == "6":
-            print("Exiting program.")
+            print("Exiting program.Thankyou ")
             break
 
         else:
